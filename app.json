@@ -1,0 +1,57 @@
+{
+  "pages":[
+        "pages/index/index",
+    "pages/demo01/demo01",
+    "pages/demo02/demo02",
+    "pages/demo03/demo03",
+    "pages/demo04/demo04",
+
+    "pages/logs/logs"
+  ],
+
+
+
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "我的微信小程序",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#000000"
+  },
+  
+
+
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "icon/主页.png",
+        "selectedIconPath": "icon/主页.png"
+      },
+      {
+        "pagePath": "pages/demo04/demo04",
+        "text": "demo04",
+        "iconPath": "icon/个人中心.png",
+        "selectedIconPath": "icon/个人中心.png"
+      },
+      {
+        "pagePath": "pages/demo02/demo02",
+        "text": "demo02",
+        "iconPath": "icon/网页.png",
+        "selectedIconPath": "icon/网页.png"
+      },
+      {
+        "pagePath": "pages/demo03/demo03",
+        "text": "demo03",
+        "iconPath": "icon/订单.png",
+        "selectedIconPath": "icon/订单.png"
+      }
+    ],
+    "selectedColor": "#0094ff",
+    "position": "bottom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
