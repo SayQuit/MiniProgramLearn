@@ -1,23 +1,37 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<search></search>
+<swiper autoplay interval="1000" circular indicator-dots indicator-active-color="white">
+  <swiper-item>
+    <navigator>
+      <image src="//img.alicdn.com/imgextra/i4/1639199508/O1CN01DyYVjr2K6iUCrG7Aj_!!1639199508.jpg_430x430q90.jpg" mode="aspectFill"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator>
+      <image src="https://picasso.alicdn.com/imgextra/O1CNA1VgEotd2K6iYz8UWbz_!!1639199508-0-psf.jpg_430x430q90.jpg" mode="aspectFill"></image>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator>
+      <image src="https://gd1.alicdn.com/imgextra/i4/0/O1CN01GMARCg252qz5lsMcD_!!0-item_pic.jpg_400x400.jpg" mode="aspectFill"></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+
+<view class="nav">
+  <navigator hover-class="noshadow"><text class="navtitle">分类</text></navigator>
+  <navigator hover-class="noshadow"><text class="navtitle">秒杀拍</text></navigator>
+  <navigator hover-class="noshadow"><text class="navtitle">超市购</text></navigator>
+  <navigator hover-class="noshadow"><text class="navtitle">母婴品</text></navigator>
+</view>
+
+<view style="display: flex;" class="floor">
+<view style="flex: 1;"><navigator><image src="../../img/1.png" mode="aspectFill"></image></navigator></view>
+<view style="flex: 1;display: flex;flex-direction: column;">
+  <view style="flex:1"><navigator><image src="../../img/2.webp" mode="aspectFill"></image></navigator></view>
+  <view style="flex:1"><navigator><image src="../../img/3.webp" mode="aspectFill"></image></navigator></view>
+</view>
+<view style="flex: 1;display: flex;flex-direction: column;">
+  <view style="flex:1"><navigator><image src="../../img/4.webp" mode="aspectFill"></image></navigator></view>
+  <view style="flex:1"><navigator><image src="../../img/5.webp" mode="aspectFill"></image></navigator></view>
+</view>
 </view>

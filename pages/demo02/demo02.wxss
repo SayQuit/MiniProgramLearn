@@ -1,5 +1,0 @@
-/* pages/demo02/demo02.wxss */
-image{
-  width: 300px;
-  height: 500px;
-}

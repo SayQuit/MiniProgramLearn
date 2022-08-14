@@ -1,57 +1,56 @@
 {
   "pages":[
-        "pages/index/index",
-    "pages/demo01/demo01",
-    "pages/demo02/demo02",
-    "pages/demo03/demo03",
-    "pages/demo04/demo04",
+    "pages/index/index",
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
 
-    "pages/logs/logs"
   ],
-
-
-
   "window":{
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#0094ff",
-    "navigationBarTitleText": "我的微信小程序",
-    "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true,
-    "backgroundColor": "#000000"
-  },
-  
-
-
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "主页",
-        "iconPath": "icon/主页.png",
-        "selectedIconPath": "icon/主页.png"
-      },
-      {
-        "pagePath": "pages/demo04/demo04",
-        "text": "demo04",
-        "iconPath": "icon/个人中心.png",
-        "selectedIconPath": "icon/个人中心.png"
-      },
-      {
-        "pagePath": "pages/demo02/demo02",
-        "text": "demo02",
-        "iconPath": "icon/网页.png",
-        "selectedIconPath": "icon/网页.png"
-      },
-      {
-        "pagePath": "pages/demo03/demo03",
-        "text": "demo03",
-        "iconPath": "icon/订单.png",
-        "selectedIconPath": "icon/订单.png"
-      }
-    ],
-    "selectedColor": "#0094ff",
-    "position": "bottom"
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "黑马优购",
+    "navigationBarTextStyle":"white"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#fa2d4a",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./icon/首页.png",
+      "selectedIconPath": "./icon/首页 (1).png"
+    },
+    {
+      "pagePath": "pages/category/index",
+      "text": "分类",
+      "iconPath": "./icon/分类.png",
+      "selectedIconPath": "./icon/分类1.png"
+    },
+    {
+      "pagePath": "pages/cart/index",
+      "text": "购物车",
+      "iconPath": "./icon/购物车空.png",
+      "selectedIconPath": "./icon/购物车满.png"
+    },
+    {
+      "pagePath": "pages/user/index",
+      "text": "用户",
+      "iconPath": "./icon/个人中心.png",
+      "selectedIconPath": "./icon/个人.png"
+    }
+  ]
+  }
 }
