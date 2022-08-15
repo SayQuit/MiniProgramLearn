@@ -1,0 +1,5 @@
+<!--pages/demo04/demo04.wxml-->
+<component1 d='dsjkgkjagf' bindsdkjgv="handleitemChange">
+<block>{{id}}</block>
+</component1>
+<!-- 这里bind后面的东西和子组件的名称要一致 -->

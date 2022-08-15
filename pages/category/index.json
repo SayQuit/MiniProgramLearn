@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "aside":"../../components/aside/aside",
-    "search":"../../components/search/search"
-  }
-}

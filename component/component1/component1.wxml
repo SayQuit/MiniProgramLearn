@@ -1,0 +1,17 @@
+<!--component/component1/component1.wxml-->
+<!-- <text>component/component1/component1.wxml</text> -->
+<view class="main">首页</view>
+<view class="nav">
+  <!-- <view bindtap="clickNav" data-nav="news" class="current">要闻</view>
+  <view bindtap="clickNav" data-nav="recommend">推荐</view>
+  <view bindtap="clickNav" data-nav="original">原创</view> -->
+
+  <view wx:for="{{nav}}" wx:for-item="item" wx:for-index="index" wx:key='id' class="{{item.active?'current':''}}" bindtap="clickNav" data-nav="{{item.id}}">
+  {{item.name}}
+  </view>
+</view>
+<!-- <view>{{d}}</view> -->
+<view class="content">
+  <slot></slot>
+</view>
+

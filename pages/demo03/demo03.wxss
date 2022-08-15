@@ -1,0 +1,10 @@
+/* pages/demo03/demo03.wxss */
+
+view{
+  width: 500rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  background-color: lightcoral;
+  text-align: center;
+  line-height: 100rpx;
+}

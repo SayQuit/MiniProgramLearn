@@ -1,0 +1,10 @@
+<!--pages/demo02/demo02.wxml-->
+<input type="number" bindinput="handInput"/>
+<button bindtap="add" data-operation="{{1}}">+</button>
+<button bindtap="add" data-operation="{{-1}}">-</button>
+<view>{{num}}</view>
+
+<image src="https://s1.ax1x.com/2022/07/30/vim6ds.jpg" mode="aspectFit"></image>
+<navigator url="../demo04/demo04" open-type="navigate">demo04</navigator>
+<rich-text nodes="{{richtext}}"></rich-text>
+<button>点击按钮</button>
